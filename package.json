@@ -1,0 +1,12 @@
+{
+  "name": "leaddesk-mini",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix api run dev\" \"npm --prefix client run dev\"",
+    "install:all": "npm --prefix api install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
