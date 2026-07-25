@@ -15,6 +15,8 @@ const defaultPort = Number(process.env.PORT || 5173);
 const mongoUri = process.env.MONGODB_URI;
 
 app.use(cors());
+
+   
 app.use(express.json());
 
 const seedAdminUser = async () => {
