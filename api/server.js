@@ -14,20 +14,8 @@ const app = express();
 const defaultPort = Number(process.env.PORT || 5173);
 const mongoUri = process.env.MONGODB_URI;
 
-// app.use(cors());
-const cors = require("cors");
+ app.use(cors());
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3005",
-      "https://lead-management-system-1-6ekb.onrender.com"
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
-   
 app.use(express.json());
 
 const seedAdminUser = async () => {
