@@ -6,6 +6,8 @@ const initialAuthForm = { email: '', password: '' };
 const CURRENT_USER_KEY = 'leaddesk-current-user';
 
 function App() {
+
+     console.log(import.meta.env.VITE_API_URL);
   const [view, setView] = useState(() => {
     if (typeof window === 'undefined') {
       return 'landing';

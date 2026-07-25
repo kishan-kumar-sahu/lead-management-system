@@ -7,3 +7,4 @@ const client = axios.create({
 export const getLeads = () => client.get('/leads').then((res) => res.data);
 export const createLead = (payload) => client.post('/leads', payload).then((res) => res.data);
 export const updateLeadStatus = (id, status) => client.put(`/leads/${id}`, { status }).then((res) => res.data);
+
