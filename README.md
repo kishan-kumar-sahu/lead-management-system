@@ -176,7 +176,7 @@ npm install
 Backend
 
 ```bash
-cd server
+cd api
 npm install
 ```
 
@@ -201,13 +201,13 @@ PORT=5000
 Backend
 
 ```bash
-npm run dev
+ node server.js
 ```
 
 Frontend
 
 ```bash
-npm start
+npm run dev
 ```
 
 ---
