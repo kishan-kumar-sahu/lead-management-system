@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const vitePort = Number(env.VITE_PORT || 3000);
   const apiPort = Number(env.VITE_API_PORT || 5173);
   // const rawApiUrl = env.VITE_API_URL || `http://localhost:${apiPort}`;
-  const rawApiUrl = env.VITE_API_URL ||`https://lead-management-system-ltu4.onrender.com:${apiPort}`;
+  const rawApiUrl = env.VITE_API_URL ||`http://localhost:${apiPort}`;
 
   const apiTarget = rawApiUrl.replace(/\/api\/?$/, '');
 
