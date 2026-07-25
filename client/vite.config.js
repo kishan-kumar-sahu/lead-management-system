@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
   // const rawApiUrl = env.VITE_API_URL || `http://localhost:${apiPort}`;
   const rawApiUrl = env.VITE_API_URL ||`http://localhost:${apiPort}`;
 
-  const apiTarget = rawApiUrl.replace(/\/api\/?$/, '');
+  // const apiTarget = rawApiUrl.replace(/\/api\/?$/, '');
 
   return {
     plugins: [react()],
@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
       port: vitePort,
       proxy: {
         '/api': {
-          target: apiTarget,
+          target: rawApiUrl,
           changeOrigin: true,
           secure: false
         }
